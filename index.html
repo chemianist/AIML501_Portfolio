@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Taoyi Chen's portfolio artifact comparing ten machine-learning algorithms by learning type, domain, operation and real-world application.">
+  <title>Machine Learning Algorithms | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+ <nav class="nav wrap" aria-label="Primary navigation"><a class="brand" href="#top"><span class="brand-icon">ML</span> Algorithm Atlas</a><div class="navlinks"><a href="#overview">Overview</a><a href="#algorithms">Algorithms</a><a href="#visuals">Visuals</a><a href="#reflection">Reflection</a></div></nav>
+</header>
+<main id="main">
+<section class="hero" id="top"><div class="wrap hero-inner"><div><div class="eyebrow">PROFESSIONAL LEARNING PORTFOLIO  /  ARTIFACT 01</div><h1>Machine Learning<br><span>Algorithms, Explained.</span></h1><p class="lede">A comparative visual framework of 10 algorithms: learning type, where they apply, how they work, and the real problems they solve.</p><div class="hero-actions"><a class="button primary" href="#algorithms">Explore algorithms</a><a class="button secondary" href="assets/ml-algorithms-infographic.png" download>Download infographic (PNG)</a></div></div><div class="hero-visual" aria-hidden="true"><span class="orbit orbit-a"></span><span class="orbit orbit-b"></span><div class="center-ai">AI <small>Machine Learning</small></div><div class="sat s1">Regression</div><div class="sat s2">Clustering</div><div class="sat s3">Vision</div><div class="sat s4">Generative</div></div></div></section>
+<section class="wrap overview" id="overview"><div class="section-heading"><div class="eyebrow">FOUNDATIONS</div><h2>Two ways to learn from data</h2><p>Choose a learning approach by asking whether a desired outcome is provided in labeled examples.</p></div><div class="overview-grid"><div class="overview-card"><div class="number">01</div><h3>Supervised learning</h3><p>Uses labeled examples to learn a mapping from inputs to a known output, such as a numeric value or a category.</p><strong>Examples:</strong><p>Regression, classification, and labeled image recognition.</p></div><div class="overview-card green"><div class="number">02</div><h3>Unsupervised learning</h3><p>Finds structure in unlabeled data, including groups and low-dimensional representations.</p><strong>Examples:</strong><p>Clustering, dimensionality reduction, and some generative modeling.</p></div></div><p class="nuance"><strong>Classification note:</strong> GANs commonly learn from unlabeled examples, but conditional GANs can use labels. They are included with unsupervised methods here to match the assignment’s two-column framework; generative modeling is not exclusively an unsupervised-learning category.</p></section>
+<section class="catalog" id="algorithms"><div class="wrap"><div class="section-heading"><div class="eyebrow">THE FRAMEWORK</div><h2>10 algorithms, four application domains</h2><p>Explore what each method does. Filter by learning type and application domain; every card includes a concrete use case.</p></div>
+<div class="filters" aria-label="Algorithm filters"><label for="typeFilter">Learning type <select id="typeFilter"><option value="all">All types</option><option value="supervised">Supervised</option><option value="unsupervised">Unsupervised</option></select></label><label for="domainFilter">Application domain <select id="domainFilter"><option value="all">All domains</option><option value="tabular-data">Tabular Data</option><option value="computer-vision">Computer Vision</option><option value="nlp">NLP</option><option value="generative-ai">Generative AI</option></select></label><span id="resultCount" aria-live="polite">Showing 10 of 10 algorithms</span></div>
+<div class="cards"><article class="algorithm-card supervised" data-type="supervised" data-domains="tabular-data" tabindex="0">
+   <div class="card-header"><h3>Linear Regression</h3><span class="method-tag">Regression</span></div>
+   <div class="domain-tags"><span class="chip">Tabular Data</span></div>
+   <p class="card-label">HOW IT WORKS</p><p>Fits a linear relationship between input features and a continuous numerical target.</p>
+   <p class="card-label">REAL-WORLD USE</p><p>Estimate house prices using property size and location.</p>
+  </article><article class="algorithm-card supervised" data-type="supervised" data-domains="tabular-data" tabindex="0">
+   <div class="card-header"><h3>Logistic Regression</h3><span class="method-tag">Classification</span></div>
+   <div class="domain-tags"><span class="chip">Tabular Data</span></div>
+   <p class="card-label">HOW IT WORKS</p><p>Uses a logistic function to estimate the probability of a class.</p>
+   <p class="card-label">REAL-WORLD USE</p><p>Flag potentially fraudulent transactions.</p>
+  </article><article class="algorithm-card supervised" data-type="supervised" data-domains="tabular-data computer-vision" tabindex="0">
+   <div class="card-header"><h3>Decision Tree</h3><span class="method-tag">Classification</span></div>
+   <div class="domain-tags"><span class="chip">Tabular Data</span><span class="chip">Computer Vision</span></div>
+   <p class="card-label">HOW IT WORKS</p><p>Splits examples through interpretable feature-based questions and thresholds.</p>
+   <p class="card-label">REAL-WORLD USE</p><p>Sort fruit images using extracted shape and color features.</p>
+  </article><article class="algorithm-card supervised" data-type="supervised" data-domains="tabular-data" tabindex="0">
+   <div class="card-header"><h3>Random Forest</h3><span class="method-tag">Ensemble</span></div>
+   <div class="domain-tags"><span class="chip">Tabular Data</span></div>
+   <p class="card-label">HOW IT WORKS</p><p>Combines predictions from multiple decision trees to improve robustness.</p>
+   <p class="card-label">REAL-WORLD USE</p><p>Assess credit risk from financial and applicant records.</p>
+  </article><article class="algorithm-card supervised" data-type="supervised" data-domains="nlp" tabindex="0">
+   <div class="card-header"><h3>Naive Bayes</h3><span class="method-tag">Classification</span></div>
+   <div class="domain-tags"><span class="chip">NLP</span></div>
+   <p class="card-label">HOW IT WORKS</p><p>Uses Bayes&rsquo; rule and a conditional-independence assumption to classify examples.</p>
+   <p class="card-label">REAL-WORLD USE</p><p>Detect spam emails from word patterns.</p>
+  </article><article class="algorithm-card supervised" data-type="supervised" data-domains="computer-vision" tabindex="0">
+   <div class="card-header"><h3>Convolutional Neural Network (CNN)</h3><span class="method-tag">Deep learning</span></div>
+   <div class="domain-tags"><span class="chip">Computer Vision</span></div>
+   <p class="card-label">HOW IT WORKS</p><p>Learns spatial image patterns with convolutional filters and deeper layers.</p>
+   <p class="card-label">REAL-WORLD USE</p><p>Detect surface defects in manufacturing images.</p>
+  </article><article class="algorithm-card unsupervised" data-type="unsupervised" data-domains="tabular-data" tabindex="0">
+   <div class="card-header"><h3>K-means Clustering</h3><span class="method-tag">Clustering</span></div>
+   <div class="domain-tags"><span class="chip">Tabular Data</span></div>
+   <p class="card-label">HOW IT WORKS</p><p>Assigns observations to k clusters by repeatedly updating cluster centroids.</p>
+   <p class="card-label">REAL-WORLD USE</p><p>Segment customers by purchasing behavior.</p>
+  </article><article class="algorithm-card unsupervised" data-type="unsupervised" data-domains="tabular-data" tabindex="0">
+   <div class="card-header"><h3>DBSCAN</h3><span class="method-tag">Clustering</span></div>
+   <div class="domain-tags"><span class="chip">Tabular Data</span></div>
+   <p class="card-label">HOW IT WORKS</p><p>Finds dense groups of points and labels sparse observations as noise.</p>
+   <p class="card-label">REAL-WORLD USE</p><p>Spot geographic hotspots and anomalous locations.</p>
+  </article><article class="algorithm-card unsupervised" data-type="unsupervised" data-domains="tabular-data" tabindex="0">
+   <div class="card-header"><h3>Principal Component Analysis (PCA)</h3><span class="method-tag">Dimensionality reduction</span></div>
+   <div class="domain-tags"><span class="chip">Tabular Data</span></div>
+   <p class="card-label">HOW IT WORKS</p><p>Projects correlated features onto fewer orthogonal components that preserve variance.</p>
+   <p class="card-label">REAL-WORLD USE</p><p>Visualize high-dimensional chemical-property data.</p>
+  </article><article class="algorithm-card unsupervised" data-type="unsupervised" data-domains="generative-ai computer-vision" tabindex="0">
+   <div class="card-header"><h3>Generative Adversarial Network (GAN)</h3><span class="method-tag">Generative modeling</span></div>
+   <div class="domain-tags"><span class="chip">Generative AI</span><span class="chip">Computer Vision</span></div>
+   <p class="card-label">HOW IT WORKS</p><p>Trains a generator against a discriminator to create realistic new samples.</p>
+   <p class="card-label">REAL-WORLD USE</p><p>Generate synthetic training images.</p>
+  </article></div></div></section>
+<section class="wrap visual-section" id="visuals"><div class="section-heading"><div class="eyebrow">DOWNLOADABLE VISUALS</div><h2>One framework, two complementary views</h2><p>The main infographic satisfies the assignment criteria; the second diagram clarifies how to choose among methods.</p></div>
+ <figure class="visual-figure"><a href="assets/ml-algorithms-infographic.svg" target="_blank" rel="noopener"><img src="assets/ml-algorithms-infographic.svg" alt="Infographic showing ten machine-learning algorithms divided into supervised and unsupervised learning, with application domains, descriptions and real-world examples" loading="lazy"></a><figcaption>Figure 1. Comparative algorithm framework — <a href="assets/ml-algorithms-infographic.png" download>PNG</a> · <a href="assets/ml-algorithms-infographic.svg" download>editable SVG</a></figcaption></figure>
+ <figure class="visual-figure roadmap"><a href="assets/model-selection-roadmap.svg" target="_blank" rel="noopener"><img src="assets/model-selection-roadmap.svg" alt="Flowchart beginning with whether the data have target labels, then linking kinds of tasks to suitable machine learning methods" loading="lazy"></a><figcaption>Figure 2. Model-selection roadmap — <a href="assets/model-selection-roadmap.png" download>PNG</a> · <a href="assets/model-selection-roadmap.svg" download>editable SVG</a></figcaption></figure>
+</section>
+<section class="reflection" id="reflection"><div class="wrap reflection-inner"><div class="section-heading"><div class="eyebrow">LEARNING REFLECTION</div><h2>What I learned building this framework</h2></div><p>Creating this visual comparison helped me distinguish learning paradigms from algorithm functions. I initially thought of classification, clustering, and deep learning as parallel categories, but the exercise clarified that a method's training approach, task, and data domain describe different aspects of its design.</p><p>I learned that supervised methods use known targets, while unsupervised techniques discover patterns without target labels. Importantly, K-means and DBSCAN both cluster observations but make different assumptions about cluster structure, while PCA reduces dimensions rather than assigning groups. CNNs learn representations from images, and GANs generate new samples through adversarial training.</p><p>As someone interested in scientific computing, I can connect these distinctions to chemical-property prediction, image analysis, molecular data exploration, and synthetic data generation. My main takeaway is that selecting a machine-learning algorithm should begin with the research question, the available data and labels, and the required trade-offs in accuracy and interpretability.</p></div></section>
+<section class="wrap sources"><h2>Sources and further reading</h2><p>General descriptions are educational summaries, not results from models trained for this assignment.</p><div class="source-links"><a href="https://scikit-learn.org/stable/supervised_learning.html" target="_blank" rel="noopener">scikit-learn supervised methods</a><a href="https://scikit-learn.org/stable/unsupervised_learning.html" target="_blank" rel="noopener">scikit-learn unsupervised methods</a><a href="https://docs.pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html" target="_blank" rel="noopener">PyTorch GAN tutorial</a></div></section>
+</main><footer class="footer"><div class="wrap footer-inner"><span>Taoyi Chen · Machine Learning Portfolio</span><span>Created for educational purposes · Static GitHub Pages site</span></div></footer>
+</body></html>
